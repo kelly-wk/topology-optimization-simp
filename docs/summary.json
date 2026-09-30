@@ -1,0 +1,25 @@
+{
+  "provenance": "clean-room reconstruction; no recovered user source code was available",
+  "benchmark": "2-D cantilever compliance minimization",
+  "method": "Q4 plane-stress FEM + SIMP + sensitivity filter + OC update",
+  "config": {
+    "nelx": 18,
+    "nely": 6,
+    "volfrac": 0.4,
+    "penal": 3.0,
+    "rmin": 1.5,
+    "max_iter": 80,
+    "tolerance": 0.01,
+    "young": 1.0,
+    "young_min": 1e-09,
+    "poisson": 0.3
+  },
+  "iterations": 64,
+  "converged": true,
+  "initial_compliance": 1802.5563175314833,
+  "final_compliance": 563.5913504292218,
+  "compliance_reduction_percent": 68.73377297853118,
+  "final_volume_fraction": 0.39999339671025064,
+  "final_maximum_change": 0.009516254295894588,
+  "maximum_displacement": 563.5913504291858
+}

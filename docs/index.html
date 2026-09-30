@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2-D SIMP Topology Optimization</title>
+  <style>
+    :root { color-scheme: light; --ink:#1f2933; --muted:#52606d; --line:#d9e2ec; --accent:#315b7d; --paper:#fff; --wash:#f5f7fa; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--wash); color:var(--ink); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(920px,calc(100% - 32px)); margin:48px auto; background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:clamp(24px,5vw,56px); }
+    .eyebrow { color:var(--accent); font-weight:650; letter-spacing:.08em; text-transform:uppercase; font-size:.78rem; }
+    h1 { margin:.35rem 0 .25rem; font-size:clamp(2rem,5vw,3.25rem); line-height:1.12; letter-spacing:-.035em; }
+    .subtitle { margin:0 0 1.75rem; color:var(--muted); font-size:1.05rem; }
+    .notice { border-left:4px solid var(--accent); background:#edf3f8; padding:14px 18px; margin:24px 0 32px; }
+    .result { padding:20px; border:1px solid var(--line); border-radius:10px; background:#fff; }
+    .result img { display:block; width:100%; image-rendering:auto; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:28px 0; }
+    .card { border-top:2px solid var(--ink); padding-top:12px; }
+    .card strong { display:block; }
+    .card span { color:var(--muted); font-size:.92rem; }
+    a { color:var(--accent); }
+    footer { border-top:1px solid var(--line); margin-top:32px; padding-top:18px; color:var(--muted); font-size:.88rem; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">構造最適化 / Structural optimization</div>
+  <h1>2次元SIMPトポロジー最適化</h1>
+  <p class="subtitle">2-D SIMP Topology Optimization</p>
+  <p class="subtitle">片持ち梁のコンプライアンス最小化 / Cantilever compliance minimization</p>
+  <div class="notice"><strong>Provenance note.</strong> This is a clean-room reproduction created after a Drive recovery audit. Original user-authored topology source was not recovered.</div>
+  <section class="result">
+    <img src="assets/final_topology.svg" alt="Fixed cantilever, optimized material-density field, and downward unit load">
+  </section>
+  <div class="grid">
+    <div class="card"><strong>108 elements</strong><span>18 × 6 benchmark mesh</span></div>
+    <div class="card"><strong>0.39999</strong><span>Final volume fraction</span></div>
+    <div class="card"><strong>−68.73%</strong><span>Compliance change</span></div>
+    <div class="card"><strong>64 iterations</strong><span>Converged; Δρ = 0.00952</span></div>
+  </div>
+  <div class="grid">
+    <div class="card"><strong>Q4 FEM</strong><span>Plane-stress finite elements</span></div>
+    <div class="card"><strong>SIMP</strong><span>Penalized material interpolation</span></div>
+    <div class="card"><strong>OC update</strong><span>Volume-constrained optimization</span></div>
+    <div class="card"><strong>NumPy</strong><span>One runtime dependency</span></div>
+  </div>
+  <p><a href="report.html">Method and verification</a> · <a href="provenance.html">Evidence boundary</a> · <a href="summary.json">Run summary</a></p>
+  <footer>Minimal, reproducible, and explicitly separated from third-party Drive material.</footer>
+</main>
+</body>
+</html>

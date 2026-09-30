@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">2次元SIMPトポロジー最適化 / 2-D SIMP Topology Optimization</title>
+  <desc id="desc">A provenance-explicit clean-room SIMP cantilever benchmark rebuilt because no original user-authored topology source was recovered from Drive.</desc>
+  <rect width="1280" height="640" fill="#F8FAFB"/>
+  <rect width="1280" height="14" fill="#9A6A31"/>
+  <rect x="48" y="50" width="1184" height="542" rx="14" fill="#FFFFFF" stroke="#D6DDE3" stroke-width="2"/>
+  <text x="78" y="98" fill="#9A6A31" font-size="16" font-weight="800" letter-spacing="1.2" font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Segoe UI',sans-serif">KELLY-WK  /  COMPUTATIONAL ENGINEERING &amp; BUILT ENVIRONMENT</text>
+  <rect x="1050" y="72" width="142" height="38" rx="19" fill="#F3ECE1"/>
+  <text x="1121" y="97" text-anchor="middle" fill="#9A6A31" font-size="15" font-weight="800" font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Segoe UI',sans-serif">Python</text>
+  <text x="78" y="176" fill="#252A32" font-size="44" font-weight="780" font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Segoe UI',sans-serif">2次元SIMPトポロジー最適化</text>
+  <text x="78" y="292" fill="#4D5966" font-size="27" font-weight="580" font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Segoe UI',sans-serif">2-D SIMP Topology Optimization</text>
+  <line x1="78" y1="365" x2="1200" y2="365" stroke="#D6DDE3"/>
+  <circle cx="91" cy="407" r="13" fill="#9A6A31"/>
+  <path d="M85 407l4 4 9-11" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="116" y="413" fill="#252A32" font-size="15" font-weight="760" font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Segoe UI',sans-serif">検証済みクリーンルーム再構成・原ソース未回収 / Clean-room rebuild · source not recovered</text>
+  <text x="78" y="461" fill="#7A8490" font-size="12" font-weight="800" letter-spacing="1.5" font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Segoe UI',sans-serif">TECH STACK</text>
+  <text x="78" y="491" fill="#252A32" font-size="16" font-weight="620" font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Segoe UI',sans-serif"><tspan x="78" y="491">NumPy  /  Q4 finite elements  /  Plane-stress analysis  /  SIMP interpolation  /  Density filtering  /</tspan><tspan x="78" y="513">Optimality-criteria update</tspan></text>
+  <text x="78" y="557" fill="#697582" font-size="14" font-weight="700" letter-spacing=".8" font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Segoe UI',sans-serif">QUESTION  →  METHOD  →  VALIDATION  →  OUTCOME</text>
+  <text x="1198" y="557" text-anchor="end" fill="#9A6A31" font-size="13" font-weight="760" font-family="-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Segoe UI',sans-serif">公開コード / Public code</text>
+</svg>
